@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMAIL AND PASSWORD VALIDATION</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="title">EMAIL AND PASSWORD VALIDATION</h1>
+    </div>
+    <div class="main-container">
+      <div class="form-container">
+        <form class="form" action="">
+          <label for="email-field" id="email">VERIFY YOUR EMAIL</label>
+          <input
+            type="text"
+            placeholder="Email"
+            name="email-field"
+            class="email-field"
+            id="email-field"
+          />
+          <input
+            type="button"
+            value="VERIFY EMAIL"
+            class="btn-verificar"
+            onclick="onVerificarClick()"
+          />
+          <input
+            type="text"
+            name="password-field"
+            class="password-field"
+            id="password-field"
+          />
+          <input
+            type="button"
+            value="VERIFY PASSWORD"
+            onclick="onPasoaPaso()"
+            class="btn-pasoapaso"
+          />
+          <input
+            type="button"
+            value="SIGN IN"
+            onclick="onPasoaPaso()"
+            class="btn-pasoapaso"
+          />
+        </form>
+        <h3 id="output-message">VALID EMAIL</h3>
+      </div>
+    </div>
+
+    <script src="StepVerifyManager.js"></script>
+    <script src="AFDTransition.js"></script>
+    <script src="AFDNode.js"></script>
+    <script src="AutomataBuilder.js"></script>
+    <script src="AFD.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
