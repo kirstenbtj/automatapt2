@@ -15,7 +15,7 @@ let afd = new AFD(
 function onVerificarClick() {
   afd.char = "";
   if (!textField.value) {
-    INVALID_EMAIL_STRING = "TANGA EMAIL"
+    INVALID_EMAIL_STRING = "EMAIL"
     invalidEmail();
   } else {
     const validationResult = afd.validateString(textField.value);
